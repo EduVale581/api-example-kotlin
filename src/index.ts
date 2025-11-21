@@ -3,6 +3,11 @@ import cors from "cors";
 import userRoutes from "./routes/users.routes.js";
 import { swaggerDocs } from "./swagger.js";
 
+console.log("DATABASE_URL", process.env.DATABASE_URL);
+console.log("SUPABASE_URL", process.env.SUPABASE_URL);
+console.log("SUPABASE_SERVICE_ROLE", process.env.SUPABASE_SERVICE_ROLE);
+console.log("SUPABASE_BUCKET", process.env.SUPABASE_BUCKET);
+
 const app = express();
 
 app.use(cors());
